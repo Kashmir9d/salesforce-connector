@@ -1,0 +1,3 @@
+<!-- BEGIN_INCLUDE(salesforce:my-processor) -->
+    <salesforce:my-processor/>
+<!-- END_INCLUDE(salesforce:my-processor) -->
