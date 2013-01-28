@@ -3,6 +3,9 @@
  */
 package org.cookbook;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.mule.api.MuleEvent;
 import org.mule.construct.Flow;
 import org.mule.tck.FunctionalTestCase;
@@ -18,10 +21,14 @@ public class salesforceConnectorTest extends FunctionalTestCase
         return "mule-config.xml";
     }
 
-    @Test
+    @Test    
     public void testFlow() throws Exception
     {
-        runFlowAndExpect("testFlow", "Edna");
+    	Map<String, Object> expect = new HashMap<String, Object>();
+    	expect.put("FirstName", "Edna");
+    	expect.put("Id", "003E000000EgZvnIAF");
+    	expect.put("LastName", "Frank");
+        runFlowAndExpect("testFlow", expect);
     }
 
     /**

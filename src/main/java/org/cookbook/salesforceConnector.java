@@ -3,6 +3,9 @@
  */
 package org.cookbook;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.mule.api.annotations.Connect;
 import org.mule.api.annotations.ValidateConnection;
 import org.mule.api.annotations.ConnectionIdentifier;
@@ -10,10 +13,11 @@ import org.mule.api.annotations.Disconnect;
 import org.mule.api.annotations.param.ConnectionKey;
 import org.mule.api.ConnectionException;
 import org.mule.api.ConnectionExceptionCode;
-import org.mule.api.annotations.Configurable;
 import org.mule.api.annotations.Processor;
 
 import com.sforce.soap.partner.Connector;
+import com.sforce.soap.partner.DescribeSObjectResult;
+import com.sforce.soap.partner.Field;
 import com.sforce.soap.partner.PartnerConnection;
 import com.sforce.soap.partner.QueryResult;
 import com.sforce.soap.partner.sobject.SObject;
@@ -90,6 +94,18 @@ public class salesforceConnector
     		return null;
     	}
     }
+    
+    private Map<String, Object> sObjectToMap(SObject obj) throws com.sforce.ws.ConnectionException{
+    	Map<String, Object> result = new HashMap<String, Object>();
+			DescribeSObjectResult desObj = connection.describeSObject(obj.getType());
+			Field[] fields = desObj.getFields();
+			for(int j=0;j < fields.length; j++){
+				if (obj.getField(fields[j].getName()) != null){
+					result.put(fields[j].getName(), obj.getField(fields[j].getName()));
+				}
+			}
+			return result;
+    }
 
     /**
      * Custom processor
@@ -99,16 +115,17 @@ public class salesforceConnector
      * @return Some string
      */
     @Processor
-    public String myProcessor()
+    public Map<String, Object> myProcessor()
     {
+ 
     	try {
 			QueryResult queryResults = connection.query("SELECT Id, FirstName, LastName, Account.Name " +
 					            "FROM Contact WHERE AccountId != NULL ORDER BY CreatedDate ASC LIMIT 1");
 			SObject[] records = queryResults.getRecords();
 			if (records.length > 0){
-				return (String)records[0].getField("FirstName");
+				return  this.sObjectToMap(records[0]);
 			} else {
-				return "No records found";
+				return null;
 			}
     	} catch (com.sforce.ws.ConnectionException e) {
     		return null;

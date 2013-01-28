@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="1" time="4.923" errors="0" skipped="0" tests="1" name="org.cookbook.salesforceConnectorTest">
+<testsuite failures="0" time="5.215" errors="0" skipped="0" tests="1" name="org.cookbook.salesforceConnectorTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.6.0_29\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="os.name" value="Windows 7"/>
     <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.0.4\bin\..\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_29\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.6.0_29\bin;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.3\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Python27;C:\Ruby193\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;C:\Program Files\apache-maven-3.0.4\bin;C:\Program Files\Java\jdk1.6.0_29\bin;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.6.0_29\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk1.6.0_29\bin;%CommonProgramFiles%\Microsoft Shared\Windows Live;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Broadcom\Broadcom 802.11\Driver;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;C:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\ruby-1.9.3\bin;C:\Program Files (x86)\git\bin;C:\Program Files (x86)\git\cmd;C:\Program Files (x86)\QuickTime\QTSystem\;c:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\Tools\Binn\;c:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Python27;C:\Ruby193\bin;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby1.9.3\bin;C:\Program Files\apache-maven-3.0.4\bin;C:\Program Files\Java\jdk1.6.0_29\bin;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="50.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,46 +60,5 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase time="4.923" classname="org.cookbook.salesforceConnectorTest" name="testFlow">
-    <failure message="expected:&lt;[Lcom.sforce.soap.partner.sobject.SObject;@35a631cc&gt; but was:&lt;Edna&gt;" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: expected:&lt;[Lcom.sforce.soap.partner.sobject.SObject;@35a631cc&gt; but was:&lt;Edna&gt;
-	at junit.framework.Assert.fail(Assert.java:50)
-	at junit.framework.Assert.failNotEquals(Assert.java:287)
-	at junit.framework.Assert.assertEquals(Assert.java:67)
-	at junit.framework.Assert.assertEquals(Assert.java:74)
-	at org.cookbook.salesforceConnectorTest.runFlowAndExpect(salesforceConnectorTest.java:39)
-	at org.cookbook.salesforceConnectorTest.testFlow(salesforceConnectorTest.java:24)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at junit.framework.TestCase.runTest(TestCase.java:168)
-	at junit.framework.TestCase.runBare(TestCase.java:134)
-	at org.mule.tck.AbstractMuleTestCase.runBare(AbstractMuleTestCase.java:303)
-	at junit.framework.TestResult$1.protect(TestResult.java:110)
-	at junit.framework.TestResult.runProtected(TestResult.java:128)
-	at junit.framework.TestResult.run(TestResult.java:113)
-	at junit.framework.TestCase.run(TestCase.java:124)
-	at org.mule.tck.AbstractMuleTestCase.run(AbstractMuleTestCase.java:282)
-	at junit.framework.TestSuite.runTest(TestSuite.java:243)
-	at junit.framework.TestSuite.run(TestSuite.java:238)
-	at org.junit.internal.runners.JUnit38ClassRunner.run(JUnit38ClassRunner.java:83)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
-	at java.lang.reflect.Method.invoke(Method.java:597)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</failure>
-    <system-out>
-================================================================================
-= Testing: testFlow                                                            =
-================================================================================
-</system-out>
-  </testcase>
+  <testcase time="5.215" classname="org.cookbook.salesforceConnectorTest" name="testFlow"/>
 </testsuite>

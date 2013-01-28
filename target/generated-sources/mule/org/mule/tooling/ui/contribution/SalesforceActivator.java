@@ -10,7 +10,7 @@ import org.osgi.framework.BundleContext;
  * The activator class controls the plug-in life cycle
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2012-12-18T03:03:29-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:30:16-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class SalesforceActivator
     extends AbstractUIPlugin
 {
