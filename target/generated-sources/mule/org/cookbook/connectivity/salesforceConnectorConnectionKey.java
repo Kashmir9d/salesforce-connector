@@ -8,7 +8,7 @@ import javax.annotation.Generated;
  * A tuple of connection parameters
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:30:16-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class salesforceConnectorConnectionKey {
 
     /**

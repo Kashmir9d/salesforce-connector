@@ -26,7 +26,7 @@ import org.mule.config.i18n.CoreMessages;
  * MyProcessorMessageProcessor invokes the {@link org.cookbook.salesforceConnector#myProcessor()} method in {@link salesforceConnector }. For each argument there is a field in this processor to match it.  Before invoking the actual method the processor will evaluate and transform where possible to the expected argument type.
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:30:16-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class MyProcessorMessageProcessor
     extends AbstractMessageProcessor<Object>
     implements Disposable, Initialisable, Startable, Stoppable, MessageProcessor

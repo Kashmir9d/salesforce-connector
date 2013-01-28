@@ -10,7 +10,7 @@ import org.mule.api.Connection;
  * A <code>salesforceConnectorConnectionIdentifierAdapter</code> is a wrapper around {@link salesforceConnector } that implements {@link org.mule.api.Connection} interface.
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:30:16-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class salesforceConnectorConnectionIdentifierAdapter
     extends salesforceConnectorProcessAdapter
     implements Connection

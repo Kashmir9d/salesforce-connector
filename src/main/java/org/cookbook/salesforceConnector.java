@@ -113,12 +113,11 @@ public class salesforceConnector
      * {@sample.xml ../../../doc/salesforce-connector.xml.sample salesforce:my-processor}
      *
      * @return Some string
+     * @throws Exception throws a Salesforce WSConnectionException on issues with the connection
      */
     @Processor
-    public Map<String, Object> myProcessor()
+    public Map<String, Object> myProcessor() throws Exception
     {
- 
-    	try {
 			QueryResult queryResults = connection.query("SELECT Id, FirstName, LastName, Account.Name " +
 					            "FROM Contact WHERE AccountId != NULL ORDER BY CreatedDate ASC LIMIT 1");
 			SObject[] records = queryResults.getRecords();
@@ -127,8 +126,5 @@ public class salesforceConnector
 			} else {
 				return null;
 			}
-    	} catch (com.sforce.ws.ConnectionException e) {
-    		return null;
-		}
     }
 }

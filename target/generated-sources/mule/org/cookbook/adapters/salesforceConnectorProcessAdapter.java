@@ -17,7 +17,7 @@ import org.mule.api.routing.filter.Filter;
  * A <code>salesforceConnectorProcessAdapter</code> is a wrapper around {@link salesforceConnector } that enables custom processing strategies.
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:30:16-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class salesforceConnectorProcessAdapter
     extends salesforceConnectorLifecycleAdapter
     implements ProcessAdapter<salesforceConnectorCapabilitiesAdapter>
