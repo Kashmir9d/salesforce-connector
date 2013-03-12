@@ -61,12 +61,12 @@
     <attribute-category description="General." caption="General">
       <group caption="Generic" id="salesforceConnectorGeneric">
         <modeSwitch alwaysCombo="true" description="Operation." caption="Operation" name="Salesforce operations to execute">
-          <mode modeLabel="My processor" modeId="http://www.mulesoft.org/schema/mule/salesforce/my-processor"></mode>
+          <mode modeLabel="Retrieve contact" modeId="http://www.mulesoft.org/schema/mule/salesforce/retrieve-contact"></mode>
         </modeSwitch>
       </group>
     </attribute-category>
   </cloud-connector>
-  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/salesforce/abstractSalesforceConnectorGeneric" abstract="true" image="icons/large/salesforce-connector-48x32.png" localId="my-processor" icon="icons/small/salesforce-connector-24x16.png" caption="My Processor">
+  <cloud-connector returnType="java.util.Map&lt;java.lang.String,java.lang.Object&gt;" extends="http://www.mulesoft.org/schema/mule/salesforce/abstractSalesforceConnectorGeneric" abstract="true" image="icons/large/salesforce-connector-48x32.png" localId="retrieve-contact" icon="icons/small/salesforce-connector-24x16.png" caption="Retrieve Contact">
     <attribute-category description="General." caption="General"></attribute-category>
     <attribute-category description="Connection." caption="Connection">
       <group caption="Connection" id="connection">

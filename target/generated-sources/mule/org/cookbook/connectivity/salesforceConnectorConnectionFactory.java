@@ -12,7 +12,7 @@ import org.mule.api.lifecycle.Stoppable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-03-05T09:22:04-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class salesforceConnectorConnectionFactory implements KeyedPoolableObjectFactory
 {
 

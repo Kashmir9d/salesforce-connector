@@ -11,7 +11,7 @@ import org.mule.api.Capability;
  * A <code>salesforceConnectorCapabilitiesAdapter</code> is a wrapper around {@link salesforceConnector } that implements {@link org.mule.api.Capabilities} interface.
  * 
  */
-@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-01-28T10:49:20-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
+@Generated(value = "Mule DevKit Version 3.3.2", date = "2013-03-05T09:22:04-08:00", comments = "Build UNNAMED.1377.fd7d4f9")
 public class salesforceConnectorCapabilitiesAdapter
     extends salesforceConnector
     implements Capabilities

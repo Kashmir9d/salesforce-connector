@@ -24,7 +24,8 @@ import com.sforce.soap.partner.sobject.SObject;
 import com.sforce.ws.ConnectorConfig;
 
 /**
- * Cloud Connector
+ * Salesforce Example connector
+ * A connector that requests and returns the oldest Contact from a Saleforce account
  *
  * @author MuleSoft, Inc.
  */
@@ -110,13 +111,13 @@ public class salesforceConnector
     /**
      * Custom processor
      *
-     * {@sample.xml ../../../doc/salesforce-connector.xml.sample salesforce:my-processor}
+     * {@sample.xml ../../../doc/salesforce-connector.xml.sample salesforce:retrieve-contact}
      *
-     * @return Some string
+     * @return A Map of the values from a Salesforce contact
      * @throws Exception throws a Salesforce WSConnectionException on issues with the connection
      */
     @Processor
-    public Map<String, Object> myProcessor() throws Exception
+    public Map<String, Object> retrieveContact() throws Exception
     {
 			QueryResult queryResults = connection.query("SELECT Id, FirstName, LastName, Account.Name " +
 					            "FROM Contact WHERE AccountId != NULL ORDER BY CreatedDate ASC LIMIT 1");

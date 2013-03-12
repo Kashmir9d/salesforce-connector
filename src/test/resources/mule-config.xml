@@ -12,7 +12,7 @@
     <salesforce:config username="doug_davies@berkeley.edu" password="salesforce1990RMsNg7BIwg0BFlttnS0aPvpSM"/>
 
     <flow name="testFlow">
-        <salesforce:my-processor/>
+        <salesforce:retrieve-contact/>
     </flow>
 
 </mule>
