@@ -9,7 +9,7 @@
         http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
         http://www.mulesoft.org/schema/mule/salesforce http://www.mulesoft.org/schema/mule/salesforce/1.0-SNAPSHOT/mule-salesforce.xsd">
 
-    <salesforce:config username="doug_davies@berkeley.edu" password="salesforce1990RMsNg7BIwg0BFlttnS0aPvpSM"/>
+    <salesforce:config username="doug_davies@berkeley.edu" password="1990salesforceBb0iEAt4SUIp7Qf3V5iu6RtdB"/>
 
     <flow name="testFlow">
         <salesforce:retrieve-contact/>
