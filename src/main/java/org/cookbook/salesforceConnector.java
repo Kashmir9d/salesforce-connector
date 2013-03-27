@@ -50,7 +50,6 @@ public class salesforceConnector
 	@Connect
 	public void connect(@ConnectionKey String username, String password)
 			throws ConnectionException {
-		System.out.println("Connect running!");
 		ConnectorConfig config = new ConnectorConfig();
 		config.setUsername(username);
 		config.setPassword(password);
@@ -110,7 +109,6 @@ public class salesforceConnector
 				result.put(fields[j].getName(), obj.getField(fields[j].getName()));
 			}
 		}
-		System.out.println("sObject To Map Ran Successfully");
 		return result;
 	}
 
